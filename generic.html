@@ -9,9 +9,26 @@
 		<title>Generic - Stellar by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.carousel-inner img {
+			  max-height: 1000px;
+			  object-fit: cover;
+			}
+		  
+			@media (max-width: 768px) {
+			  .carousel-inner img {
+				max-height: 300px;
+			  }
+			}
+		  </style>
 	</head>
+	<!-- Bootstrap JS (before </body>) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -29,8 +46,32 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-								<h2>Photograohy</h2>
-								<p>I have been a photographer for about about 9 years now back when I would take pictures on a Samsung Galaxy Prevail LTE. </p>
+								<h2>Photography</h2>
+								<!-- Carousel Start -->
+								<div id="photoCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval = "5000" style="max-width: 100%; margin: auto;">
+									<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="images/flower.jpg" class="d-block w-100" alt="Photography Image 1">
+									</div>
+									<div class="carousel-item">
+										<img src="images/trainstop.JPG" class="d-block w-100" alt="Photography Image 2">
+									</div>
+									<div class="carousel-item">
+										<img src="images/leftright.JPG" class="d-block w-100" alt="Left Right">
+									</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon"></span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+									<span class="carousel-control-next-icon"></span>
+									</button>
+								</div>
+								<!-- Carousel End -->
+								<p>I have been a photographer for about about 9 years now back when I would take pictures on a Samsung Galaxy Prevail LTE.
+									It wasn't till my sophmore year in high school that I saved up enough to buy my first camera and since then its been a trusty 
+									companion that I can count on. 
+								</p>
 								<p>Pellentesque venenatis dolor i</p>
 								<h2>Tech Tinkerer</h2>
 								<p>Cmvpwmvpoewmpvmweu.</p>
