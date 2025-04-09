@@ -1,0 +1,42 @@
+<!-- Carousel Start -->
+<div id="photoCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval = "5000" style="max-width: 100%; margin: auto;">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <a href="images/flower.jpg" data-lightbox="my-gallery">
+            <img src="images/flower.jpg" class="d-block w-100" alt="Photography Image 1">
+        </a>
+    </div>
+    <div class="carousel-item">
+        <a href="images/trainstop.JPG" data-lightbox="my-gallery">
+            <img src="images/trainstop.JPG" class="d-block w-100" alt="Photography Image 2">
+        </a>
+    </div>
+    <div class="carousel-item">
+        <a href="images/leftright.JPG" data-lightbox="my-gallery">
+            <img src="images/leftright.JPG" class="d-block w-100" alt="Left Right">
+        </a>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+<!-- Carousel End -->
+<!-- Carousel Style, goes inside of <head></head> at the top-->
+<style>
+    .lightbox .lb-image {
+          transition: opacity 0.4s ease-in-out;
+    }
+
+    .carousel-item a {
+        display: block;
+        height: 100%;
+    }
+    .carousel-item img {
+        max-height: 800px;
+        object-fit: cover;
+    }
+    </style>
