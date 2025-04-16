@@ -16,17 +16,15 @@
 		<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
 		<style>
 		.gallery-grid {
-  			display: grid;
-  			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			gap: 10px;
-			align-items: start;
+  			column-count: 5;
+			column-gap: 1rem;
 		}
 
 		.gallery-grid a {
-			display: block;
-			position: relative;
-			overflow: hidden;
-			border-radius: 10px;
+			break-inside: avoid;
+			display: inline-block;
+			margin-bottom: 1rem;
+			width: 100%;
 		}
 
 		.gallery-grid img {
@@ -67,31 +65,59 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								  
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+								<span class="image main">
+									<img src="images/riverfromabove.JPG" alt="" style="height: 500px; object-fit: cover; width: 100%;"/>
+								</span>
 								<h2>Photography</h2>
 								<div class="gallery-grid">
 									<a href="images/flower.jpg" data-lightbox="collage" data-title="Habiscus on the Vine">
 									  <img src="images/flower.jpg" alt="Sunset at the beach">
 									</a>
+									<a href="images/pines.JPG" data-lightbox="collage" data-title="Pines">
+										<img src="images/pines.JPG" alt="Portrait">
+									</a>
 									<a href="images/leftright.jpg" data-lightbox="collage" data-title="Left Right">
 									  <img src="images/leftright.jpg" alt="Urban skyline">
 									</a>
+									<a href="images/maninsky.JPG" data-lightbox="collage" data-title="Man in the Sky">
+										<img src="images/maninsky.JPG" alt="Portrait">
+									</a>
+									<a href="images/applefield.jpg" data-lightbox="collage" data-title="Fields of Apples">
+										<img src="images/applefield.jpg" alt="Portrait">
+									</a>
 									<a href="images/trainstop.jpg" data-lightbox="collage" data-title="Trainstop">
 									  <img src="images/trainstop.jpg" alt="Portrait">
+									</a>
+									<a href="images/lunareclise.JPG" data-lightbox="collage" data-title="Red Moon">
+									<img src="images/lunareclise.JPG" alt="Portrait">
+									</a>
+									<a href="images/distance_itza_popo.JPG" data-lightbox="collage" data-title="Volcano in the Distance">
+										<img src="images/distance_itza_popo.JPG" alt="Portrait">
+									</a>
+									<a href="images/friends.JPG" data-lightbox="collage" data-title="Friends">
+										<img src="images/friends.JPG" alt="Portrait">
 									</a>
 									<!-- Add more <a> elements for more photos -->
 								</div> 
 								<p>I have been a photographer for about about 9 years now back when I would take pictures on a Samsung Galaxy Prevail LTE.
 									It wasn't till my sophmore year in high school that I saved up enough to buy my first camera and since then its been a trusty 
-									companion that I can count on. 
+									companion that I can count on. It has traveled with me from high school to college, from Mexico to England. It has been by my side
+									always ready to capture everlasting memories. 
 								</p>
-								<p>Pellentesque venenatis dolor i</p>
+								<p>A majority of what I have come to love taking picutes of is land/cityscapes. Which is a stark contrast to taking portraits. My
+									instagrams has a lot more of the portraits I would take but for the purposes of this website, I tried to still strictly to only
+									land/cityscapes. I do have some of my portraits, on here to showcase what I primarly started taking pictures of.
+								</p>
 								<h2>Tech Tinkerer</h2>
-								<p>Cmvpwmvpoewmpvmweu.</p>
+								<p></p>
+								<h2>Legos & Model Kits</h2>
+								<p></p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="index.html" class="button">Main Page</a></li>
+									</ul>
+								</footer>
 							</section>
-							<div style="text-align: right; "margin-top: 2em;">
-								<a href="index.html" class="button"> Main Page</a>
-							</div>
 
 					</div>
 					
@@ -116,11 +142,10 @@
 								<dd><a href="#">belarry2001@gmail.com</a></dd>
 							</dl>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+
+								<li><a href="https://www.linkedin.com/in/larry-bello-castillo-0a508123a/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://www.instagram.com/bellophotography__/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
 								<li><a href="https://github.com/larrybel1" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 							</ul>
 						</section>
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
