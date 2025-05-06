@@ -27,6 +27,17 @@
 			  transform: scale(1.1);    /* Slight zoom effect on hover */
 			  color: #ff0055;           /* Change color on hover */
 			}
+			.actions.special li {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.button-caption {
+				font-size: 0.9em;
+				margin-bottom: 0.5em;
+				text-align: center;
+			}
 		  </style>
 	</head>
 	
@@ -65,22 +76,43 @@
 									With these graphs, we can make the conclution that although for some countries, the increase in GDP does decrease the IMR, it isn't the truth for 
 									every country and something else could be the cause of it decreasing.  
 								</p>
-								<p>Here is a link to my <a href="https://github.com/larrybel1/GDP_Birthrate_Visualizer.git" class="pop-link">github repository</a> with the code used to create the graphs above and with the excel sheet obtained from the World Bank
+								<p>This is the link to my <a href="https://github.com/larrybel1/GDP_Birthrate_Visualizer.git" class="pop-link">github repository</a> with the code used to create the graphs above and with the excel sheet obtained from the World Bank
 								</p>
 								<h2>No Child Left Behind & Human Right to Education</h2>
-								<p></p>
+								<blockquote>Education is a right often included as it is part of the Social, Economic, and Cultural Rights. It is written in a plethora of treaties and acts, starting with the Universal Declaration of Human Rights and the Declaration of the Rights of the Child. 
+									With all these treaties clearly labeling having the right to education, it is logical to think that the right to education is also included somewhere in U.S. law. This is, however, not the case. 
+									Education isn't mentioned anywhere in the Constitution nor in any of the amendments to it. This doesn't mean that it isn't a right that can earn protection. 
+									As seen with the Brown v. Board of Education, education and the discrimination to it can be acknowledge and address with the laws in place in the U.S. 
+									Along with the ideas of progressive realization, education being part of the Social, Economic, and Cultural Rights makes it so that as the U.S. grows economically, those rights have to slowly be realized, acknowledged and protected.
+								</blockquote>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="thesis.html" class="button">Thesis Page </a></li>
+										<li>
+											<p class = "button-caption">
+												For more on my thesis click here
+											</p>
+											<a href="thesis.html" class="button">Thesis Page </a>
+										</li>
 									</ul>
 								</footer>
                                 <h2>World Bank Graph Maker</h2>
+								<div style="text-align: center;">
+									<img src="images/gdpinjapan.png" alt="GDP over Time" title="GDP of Japan over the Years"style="max-width: 100%; height: auto;" />
+									<figcaption>Gross Domestic Product of Japan over the Years</figcaption>
+								  </div>
 								<p>This projects started out of a passion and need to find graphs. During my last two years in college as I stated to write essays with somewhat obscure topics
 									it became harder to find the necessary data to back up claims that I read in artile. The graphs that these authors aluded weren't the easiest to find. Thus,
 									the idea for this project came to be. Taking insperation from the the Infant Mortality & GDP project, I used the World Bank API in a python script that takes 
-									the user though prompts asking it what two data points they would like to compare against each other. Instead of looking though the internet for a graph talked
+									the user though prompts asking it which indicator and country they would like to look at. Instead of looking though the internet for a graph talked
 									about in an article or book, one can use this to create one that could suport a point that they are trying to get across. 
 								</p>
+								<p>Here is the link to my <a href="https://github.com/larrybel1/World_Bank.git" class="pop-link">github repository</a> with the code used to create the graphs above and below. There you'll also see how the information is obtained
+									from the API.
+								</p>
+								<div style="text-align: center;">
+									<img src="images/Mex:ChiGDP.png" alt="GDP over Time" title="GDP of Mexico and China over the Years"style="max-width: 100%; height: auto;" />
+									<figcaption>Gross Domestic Product of Mexico and China over the Years</figcaption>
+								  </div>
                                 <footer class="major">
 									<ul class="actions special">
 										<li><a href="index.html" class="button">Main Page</a></li>
